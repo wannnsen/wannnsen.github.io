@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form Registrasi</title>
+</head>
+<body>
+	<h3>Formulir Pendaftaran</h3>
+	<form action="" method="post">
+		<fieldset>
+		<legend>Silahkan isi form ini</legend>
+		<table border="0"> 
+			<tr>
+				<td>NIK <font color="red">*</font></td>
+				<td> 
+  					<input type="text" placeholder="Masukkan Nomor KTP Anda" pattern="[0-9]{16}" title="Harus Berupa Nomor dan berjumlah 16 digit" maxlength="16"  style="width: 254px;" required>
+				</td>	
+			</tr>
+			<tr>
+				<td>Nama <font color="red">*</font></td>
+				<td>
+					<input type="text" placeholder="Masukkan Nama Anda" style="width: 254px;" required>
+				</td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin <font color="red">*</font></td>
+				<td>
+					<input type="radio" name="jenis_kelamin" value="laki-laki" required> Laki-laki
+					<input type="radio" name="jenis_kelamin" value="perempuan" required> Perempuan
+				</td>
+			</tr>
+			<tr>
+				<td>Tanggal lahir <font color="red">*</font></td>
+				<td>
+					<input type="date" max="2005-03-01" style="width: 254px;" required>
+				</td>
+			</tr>
+			<tr>
+				<td>Agama <font color="red">*</font></td>
+				<td>
+					<select name="agama" style="width: 258px;" required>
+						<option>Masukkan Agama Anda</option>
+						<option>Islam</option>
+						<option>Protestan</option>
+						<option>Katholik</option>
+						<option>Hindu</option>
+						<option>Budha</option>
+					</select>
+				</td>
+				<tr>
+					<td>Hobi</td>
+					<td>
+						<input type="checkbox" name="web"> Membaca
+						<input type="checkbox" name="mobile"> Mendaki
+						<input type="checkbox" name="desk"> Olahraga
+					</td>
+				</tr>
+			<tr>
+				<td>Telepon <font color="red">*</font></td>
+				<td><input type="tel" pattern="[08][0-9]{11,13}" placeholder="08xxxxxxxxxx"  title="Harus berformat 08xxxx Berupa Nomor, berjumlah 13 digit" style="width: 254px;" maxlength="13" required></td>
+			</tr>
+			</tr>
+			<tr>
+				<td>Tinggi Badan <font color="red">*</font></td>
+				<td><input type="number" name="tinggi_badan" placeholder="Masukkan Tinggi Badan Anda" min="130" max="210" style="width: 254px;" required></td>
+			</tr>
+			<tr>
+				<td>Email <font color="red">*</font></td>
+				<td><input type="Email" name="email" placeholder="Masukkan Email Anda" style="width: 254px;" required></td>
+			</tr>
+			<tr>
+				<td>Alamat Lengkap <font color="red">*</font></td>
+				<td>
+				<textarea placeholder="Masukkan Alamat Lengkap Anda" cols="32" rows="5" name="alamat_lengkap" style="width: 256px;" required></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Username <font color="red">*</font></td>
+				<td><input type="text" name="username" minlength="5" maxlength="12" placeholder="Masukkan Username Anda" style="width: 254px;" required ></td>
+			</tr>
+			<tr>
+				<td>Password <font color="red">*</font></td>
+				<td><input type="Password" name="password" placeholder="Masukkan Password Anda" style="width: 254px;" required></td>
+			</tr>
+			<tr>
+				<td>Alamat url</td>
+				<td>
+					<input type="url" name="" placeholder="Masukkan URL Anda Bila Ada" style="width: 254px;" >
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Submit">
+					<input type="submit" value="Cancel">
+				</td>
+			</tr>
+		</table>
+		</fieldset>
+	</form>
+	<br>
+	<font color="red">* </font>Wajib di isi
+</body>
+</html>
